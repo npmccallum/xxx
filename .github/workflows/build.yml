@@ -4,6 +4,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: podman run --rm -it fedora "echo hi"
+      - run: podman run --rm -it fedora /bin/bash -c "echo hi"
       - name: Check out repository code
         uses: actions/checkout@v2
